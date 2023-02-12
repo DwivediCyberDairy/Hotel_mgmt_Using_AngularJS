@@ -1,0 +1,34 @@
+<body ng-app="app" ng-controller="myctrl">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+
+    <div class="container">
+        <div class="intro">
+            <h2 class="text-center">Hotel's & Tour Gallery</h2>
+            <p class="text-center">Find the gallery of most rated and popular places in your arround</p>
+        </div>
+        <div class="text-center"><input type="button" class="btn-primary pd-2" ng-model="all" value="ALL" />
+            <input type="button" class="btn-primary pd-2" ng-model="searchbedroom" value="BedRoom" />
+            <input type="button" class="btn-primary pd-2" ng-model="searchhill" value="Hill" />
+            <input type="button" class="btn-primary pd-2" ng-model="searchgarden" value="Garden" />
+            <input type="button" class="btn-primary pd-2" ng-model="searchcafeteria" value="Cafeteria" />
+            
+        </div>
+        <input type="text" ng-model="searchgallery" placeholder="Enter maching data" class="form-control text-right mt-2" />
+
+        <div class="row" >
+            <div class="column Training" style="float:left;" ng-repeat="distimg in disteneyimages | orderBy:'b_title' | filter:searchgallery ">
+                <div class="bg-info p-3">
+                
+                <a href="images/gallery/{{distimg.imgpath}}"><img  src="images/gallery/{{distimg.imgpath}}" alt="Mountains" style="width:100%" height="50%" width="100%"/></a>
+                <h4>{{distimg.b_title}}</h4>
+                <p>{{distimg.discription}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+
+
+   

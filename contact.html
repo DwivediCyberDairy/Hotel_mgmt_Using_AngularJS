@@ -1,0 +1,106 @@
+<body ng-app="app" ng-controller="myctrl">
+    <div class="container-fluid ">  
+            <div class="row ">
+                    <div class=" col-sm-6">
+                        <h1 style="text-align:center; font-size: 35px; "> <b> How It Works.. ! </b> </h1>
+                        <ul style="font-size: 20px;">
+                            <li> Send the details - </li>
+                            <li>Tell us details of your stay plan. Don't have plan yet, not to worry we can help with planning as well.</li>
+                            <li>Once we receive your details, one of our experts will get back to you with customised Stay / Accommodation based on the details you have provided within few hours.</li>
+                            <li>Go ahead with the deal and start packing your bags for serene stay with Surya Hotel </li>
+                            <li>Our goal,in every interaction, is to deliver an experience that builds positive, long-term relationships.If you have any questions or comments please, contact us. We are always at your service.</li>
+                            <li>Please not all members only work from the country/region of origin,including toll-free(TF) numbers.</li>
+                            <li>Our Toll-Free numbers-<br>+91-1800-223315<br>+91-1800-552211</li>
+                            <li>Data Digger (p) Ltd create this website.<br>If you like this hotel then visit again.</li>
+                            <li>If you choose our team to create and design a fully responsive website then contact us our team.</li>
+                            <!--  <li>Data Digger (p) Ltd create this website.<br>If you like this hotel then visit again.</li>-->
+                        </ul>
+                    </div>
+
+                    <div class=" col-sm-6" style="background-color: silver; min-height: 30%;">
+                        <h1>Contact page</h1>
+                    <form ng-app="myApp" ng-controller="validateCtrl"
+                    name="intellipaatForm" validate>
+                    <p>Username:<br>
+                    <input type="text" name="studentname" ng-model="studentname" required>
+                    <span style="color:red" ng-show="intellipaatForm.username.$dirty && intellipaatForm.username.$invalid">
+                    <span ng-show="intellipaatForm.username.$error.required">Username is required.</span>
+                    </span>
+                    </p>
+                    <p>Father:<br>
+                    <input type="text" name="fathername" ng-model="fathername" required>
+                    <span style="color:red" ng-show="intellipaatForm.username.$dirty && intellipaatForm.username.$invalid">
+                    <span ng-show="intellipaatForm.username.$error.required">Fathername is required.</span>
+                    </span>
+                    </p>
+                    <p>Gender:<br>
+                    <input type="radio" ng-model="myVar" value="dogs">Male
+                    <input type="radio" ng-model="myVar" value="tuts">Female
+                    </p>
+                    <p>Address:<br>
+                    <input type="textarea" name="Address" ng-model="Address" required>
+                    <span style="color:red" ng-show="intellipaatForm.username.$dirty && intellipaatForm.username.$invalid">
+                    <span ng-show="intellipaatForm.username.$error.required">Complete address is required.</span>
+                    </span>
+                    </p>
+                    <p> Email:<br>
+                    <input type="email" name="email" ng-model="email" required>
+                    <span style="color:red" ng-show="intellipaatForm.email.$dirty && intellipaatForm.email.$invalid">
+                    <span ng-show="intellipaatForm.email.$error.required">Email is required.</span>
+                    <span ng-show="intellipaatForm.email.$error.email">Invalid email address.</span>
+                    </span>
+                    <p>Nationality:<br>
+                    <input type="text" name="fathername" ng-model="fathername" required>
+                    <span style="color:red" ng-show="intellipaatForm.username.$dirty && intellipaatForm.username.$invalid">
+                    <span ng-show="intellipaatForm.username.$error.required">Fathername is required.</span>
+                    </span>
+                    </p>
+                    </p>
+                    <p>I accept all the terms and conditions<br>
+                    <input type="checkbox" ng-model="myVar">
+
+                    </p>
+                    <p>
+                    <input type="submit"
+                    ng-disabled="intellipaatForm.username.$dirty && intellipaatForm.username.$invalid ||
+                    intellipaatForm.email.$dirty && intellipaatForm.email.$invalid">
+
+                    </p>
+                    </form>
+                        <!--<h1 style="text-align:center; font-size: 35px; ">Contact Us </h1>
+                        <form action="#" method="post" class="row g-3" >
+                            <label for="name" style="font-size: 15px;"><b>Name:</b></label>
+                            <input type="text" id="txtnum" class="form-control" placeholder="Enter Your Name" /> <br>
+                            <b>Travel Destination :</b>
+                            <select id="sel" class="form-control">
+                            <option >Chitrakoot</option>
+                            <option >Fatehpur</option>
+                            <option >Kanpur</option>
+                            <option >Prayagraj</option>
+                            <option >Banaras</option>
+                            <option >Delhi</option>
+                            <option >Mumbai</option>
+                           </select> <br>
+                           <b>Email:</b>
+                            <input id="mel" type="email" class="form-control" placeholder="Enter Your EmailAddress" /><br> <b>Contact No.</b> 
+                            <input id="mob" type="number" class="form-control" placeholder="Enter Your Mobile No." /><br> <b>Tour Destination:</b>
+                            <textarea id="txtarea" class="form-control" placeholder="Enter Your Comment"></textarea><br>
+                            <b>Check-In</b><input id="dt" type="date" class="form-control" placeholder="Select Check-in Date" /><br>
+                            <b>Number Of Guests:</b><input id="txtg" type="number" class="form-control" placeholder="Enter Number of Guest" /><br>
+
+                            <div class=" col-sm-3" style="background-color: silver; min-height:1%;">
+                                <button id="btnsave" type="submit" class="btn btn-success form-control" style="font-size: 20px;"><b>Submit</b></button> <br><br>
+                            </div>
+                            <div class=" col-sm-3" style="background-color: silver; min-height: 1%;">
+                                <button type="reset" class="btn btn-danger form-control " style="font-size: 20px;"><b>Reset</b></button>
+                            </div>
+                            </form>
+                        -->
+                        </div>
+                    
+                    
+                
+            </div>
+</div>
+
+</body>

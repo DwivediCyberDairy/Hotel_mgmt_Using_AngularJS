@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+.div{
+  transition: all linear 0.5s;
+  background-color: lightblue;
+  height: 100px;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.ng-show {
+  height: 0;
+  width: 0;
+  background-color: transparent;
+  top:-200px;
+  left: 200px;
+  }
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+  <title>Department</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body ng-app="ngAnimate">
+<div class="container" ng-app="ngAnimate">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Mechnical Producation:<br><input type="checkbox" ng-model="myCheck"></h3>
+<div ng-show="myCheck">
+<ul>
+<li><b>HOD:Mr.Alok Nath(M.Tech)</b></li>
+  </ul>
+<img class="img-responsive" src="Image\Mechanical.png">
+</div>
+    </div>
+    <div class="col-sm-4">
+      <h3>Electronics Engineering: <br><input type="checkbox" ng-model="myCheck1"></h3>
+<div ng-show="myCheck1"><ul>
+<li ><b>HOD:Mr.Dev Prakash(M.Tech)</b></li>
+  </ul>
+<img class="img-responsive" src="Image\Electronics.png"></div>
+    </div>
+    <div class="col-sm-4">
+      <h3>Information Technology:<br><input type="checkbox" ng-model="myCheck2"></h3>
+<div ng-show="myCheck2">
+<ul>
+<li><b>HOD:Mr.Vipin Kumar(M.Tech)</b></li>
+  </ul>
+<img class="img-responsive" src="Image\Information.png"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Modern Office Management:<br><input type="checkbox" ng-model="myCheck4"></h3>
+<div ng-show="myCheck4">
+<ul>
+<li><b>HOD:Mr.Narayan Saxena(M.Tech)</b></li>
+  </ul>
+<img class="img-responsive" src="Image\Mom.jpg">
+</div>
+    </div>
+    <div class="col-sm-4">
+      <h3>P.G.D.C.A: <br><input type="checkbox" ng-model="myCheck5"></h3>
+<div ng-show="myCheck5"><ul>
+<li ><b>HOD:Mr.Mohit Pandey(M.Tech)</b></li>
+  </ul>
+<img class="img-responsive" src="Image\PGDCA.jpg"></div>
+    </div>
+    <div class="col-sm-4">
+      <h3>P.D.I.T:<br><input type="checkbox" ng-model="myCheck6"></h3>
+<div ng-show="myCheck6">
+<ul>
+<li><b>HOD:Mrs.Nirmala Chauhan(M.Tech)</b></li>
+  </ul>
+<img class="img-responsive" src="Image\PDIT.jpg"></div>
+    </div>
+  </div>
+    <div class="row">
+    <div class="col-sm-4">
+      <h3>Accounts:<br><input type="checkbox" ng-model="myCheck7"></h3>
+<div ng-show="myCheck7">
+<ul>
+<li><b>Accountant:Mr.Ravi Rajput(M.Com)</b></li>
+  </ul>
+<img class="img-responsive" src="Image\Mom.jpg">
+</div>
+    </div>
+    <div class="col-sm-4">
+      <h3>Computer Lab Incharge: <br><input type="checkbox" ng-model="myCheck8"></h3>
+<div ng-show="myCheck8"><ul>
+<li ><b>Incharge:Mr.Vipin Deshmukh(P.hd)</b></li>
+  </ul>
+<img class="img-responsive" src="Image\PGDCA.jpg"></div>
+    </div>
+    <div class="col-sm-4">
+      <h3>Mechanical WorkShop Incharge:<br><input type="checkbox" ng-model="myCheck9"></h3>
+<div ng-show="myCheck9">
+<ul>
+<li><b>Incharge:Mrs.Dev Kumar GUPTA(Phd)</b></li>
+  </ul>
+<img class="img-responsive" src="Image\PDIT.jpg"></div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
